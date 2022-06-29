@@ -1,0 +1,599 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Meie+Script&family=Poppins:wght@100&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&family=Meie+Script&family=Poppins:wght@100&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&family=Kdam+Thmor+Pro&family=Libre+Caslon+Display&family=Meie+Script&family=Poppins:wght@100&family=Roboto:wght@700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.mt--30 {
+  margin-top: 30px;
+}
+
+.mb--30 {
+  margin-bottom: 30px;
+}
+
+.ml--30 {
+  margin-left: 30px;
+}
+
+.mr--30 {
+  margin-right: 30px;
+}
+
+.mt--20 {
+  margin-top: 20px;
+}
+
+.mb--20 {
+  margin-bottom: 20px;
+}
+
+.ml--20 {
+  margin-left: 20px;
+}
+
+.mr--20 {
+  margin-right: 20px;
+}
+
+.icon {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+
+.icon--home {
+  content: url(/assets/icons/home.png);
+}
+
+.icon--contact {
+  content: url(/assets/icons/contact.png);
+}
+
+.icon--close {
+  content: url(/assets/icons/close.png);
+}
+
+.icon--location {
+  content: url(/assets/icons/location.png);
+}
+
+.icon--help {
+  content: url(/assets/icons/help.png);
+}
+
+.icon--facebook {
+  content: url(/assets/icons/facebook.svg);
+}
+
+.icon--instagram {
+  content: url(/assets/icons/instagram.svg);
+}
+
+.icon--youtube {
+  content: url(/assets/icons/youtube.svg);
+}
+
+.img--welcome {
+  height: auto;
+  width: 1200px;
+  content: url(/assets/images/kittenNdog2.jpg);
+}
+
+.img--contact {
+  height: auto;
+  width: 1200px;
+  content: url(/assets/images/manNdog.jpg);
+}
+
+.img--foster {
+  height: auto;
+  width: 800px;
+  content: url(/assets/images/foster.jpg);
+}
+
+.img--card {
+  height: auto;
+  width: 230px;
+  content: url(/assets/images/kittenNdog.jpg);
+  border-radius: 10px;
+}
+
+.img--pets {
+  height: auto;
+  width: 800px;
+  content: url(/assets/images/pets.jpg);
+}
+
+.img--woman {
+  height: auto;
+  width: 430px;
+  content: url(/assets/images/womanNdog.webp);
+  padding: 100px 0;
+  border-radius: 10px;
+}
+
+.layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.signature {
+  visibility: hidden;
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  opacity: 0.32;
+  font: 130px "Dancing Script", cursive;
+  margin: 600px 700px;
+  -webkit-transform: rotatey(20deg);
+          transform: rotatey(20deg);
+}
+
+.hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+  padding: 22px 20px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0px 0px 10px #ffffff;
+          box-shadow: inset 0px 0px 10px #ffffff;
+}
+
+.hamburger:hover {
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+  -webkit-box-shadow: inset 0px 0px 20px #ffffff;
+          box-shadow: inset 0px 0px 20px #ffffff;
+}
+
+.hamburger__bar {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.nav {
+  position: fixed;
+  z-index: 2;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  overflow-x: hidden;
+  font: "Libre Caslon Display", serif;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 80px;
+  background-color: #010172;
+  background-image: url(/assets/images/pattern2.jpg);
+  background-repeat: repeat;
+  background-blend-mode: darken;
+}
+
+.nav__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: 24px;
+  width: 100%;
+  gap: 14px;
+}
+
+.nav__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+}
+
+.nav__logo {
+  text-align: center;
+  font: 22px "Kdam Thmor Pro", sans-serif;
+  width: 80px;
+}
+
+.nav__link {
+  padding: 16px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0px 0px 10px #ffffff;
+          box-shadow: inset 0px 0px 10px #ffffff;
+}
+
+.nav__link:hover {
+  -webkit-transition: 150ms ease-in;
+  transition: 150ms ease-in;
+  -webkit-box-shadow: inset 0px 0px 20px #ffffff;
+          box-shadow: inset 0px 0px 20px #ffffff;
+}
+
+.main {
+  font: "Libre Caslon Display", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: #7cbcf8;
+  background-image: url(/assets/images/pattern.jpg);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.main__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.main__header__title {
+  position: absolute;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 20px #ffffff;
+  font: 56px "Kdam Thmor Pro", sans-serif;
+  margin: 40px 0px 0px 160px;
+}
+
+.main__header__text {
+  font: 24px "Libre Caslon Display", serif;
+  text-align: center;
+  padding: 0 50px;
+}
+
+.main__header__text__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  word-spacing: 5px;
+  letter-spacing: 0.6px;
+  background-color: #7cbcf8af;
+}
+
+.main__flag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 3px #000000;
+  font: 36px "Kdam Thmor Pro", sans-serif;
+  background-color: #789900c7;
+}
+
+.main__stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.main__stats__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  font: 20px "Libre Caslon Display", serif;
+  height: 300px;
+  width: 280px;
+  background-color: #ffffffab;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px #010172;
+          box-shadow: 0px 0px 5px #010172;
+}
+
+.main__stats__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.main__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background-color: #010172;
+  background-image: url(/assets/images/pattern2.jpg);
+  background-blend-mode: luminosity;
+  font: 16px "Kdam Thmor Pro", sans-serif;
+  color: #ffffff;
+}
+
+.main__footer__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  padding: 20px 150px;
+  background-color: #000000c9;
+}
+
+.main__footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+}
+
+.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #7cbcf8af;
+  padding: 40px 0;
+}
+
+.bottom__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.bottom__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+  width: 400px;
+}
+
+.bottom__section__title {
+  font: 22px "Kdam Thmor Pro", sans-serif;
+}
+
+.bottom__section__text {
+  font: 16px "Libre Caslon Display", serif;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  font: 16px "Libre Caslon Display", serif;
+}
+
+.contact {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 20px 20px;
+  font: 16px "Libre Caslon Display", serif;
+}
+
+.contact__title {
+  font: 24px "Kdam Thmor Pro", sans-serif;
+}
+
+.contact__input {
+  padding: 6px 4px;
+  border-radius: 10px;
+  font: 16px "Libre Caslon Display", serif;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 2px 2px 4px #000000;
+          box-shadow: 2px 2px 4px #000000;
+}
+
+.contact__submit {
+  border-radius: 10px;
+  background-color: #010172;
+  color: #ffffff;
+  padding: 8px 16px;
+  -webkit-box-shadow: inset 0px 0px 10px #ffffff;
+          box-shadow: inset 0px 0px 10px #ffffff;
+  -webkit-transition: -webkit-box-shadow 150ms ease-in-out;
+  transition: -webkit-box-shadow 150ms ease-in-out;
+  transition: box-shadow 150ms ease-in-out;
+  transition: box-shadow 150ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
+}
+
+.contact__submit:hover {
+  -webkit-box-shadow: inset 0px 0px 20px #ffffff;
+          box-shadow: inset 0px 0px 20px #ffffff;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 14px;
+  -webkit-box-shadow: inset 0px 0px 10px #ffffff;
+          box-shadow: inset 0px 0px 10px #ffffff;
+  background-color: #010172b7;
+  color: #ffffff;
+  font: 24px "Kdam Thmor Pro", sans-serif;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  -webkit-transition: 150ms ease-in;
+  transition: 150ms ease-in;
+  -webkit-box-shadow: inset 0px 0px 20px #ffffff;
+          box-shadow: inset 0px 0px 20px #ffffff;
+}
+
+.btn--join {
+  margin: 500px 0px 0px 500px;
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.bubble {
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0px 0px 16px #ffffff;
+          box-shadow: inset 0px 0px 16px #ffffff;
+  height: 110px;
+  width: 110px;
+  -webkit-animation: bubbles 56s infinite;
+          animation: bubbles 56s infinite;
+}
+
+.bubble__container {
+  position: absolute;
+  height: 100vh;
+  width: calc(100% - 80px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.bubble__container :nth-child(2) {
+  animation: bubbles 46s infinite reverse;
+}
+
+.bubble__container :nth-child(3) {
+  -webkit-animation-duration: 50s;
+          animation-duration: 50s;
+}
+
+.bubble__container :nth-child(4) {
+  animation: bubbles 52s infinite reverse;
+}
+
+.bubble__container :nth-child(5) {
+  -webkit-animation-duration: 62s;
+          animation-duration: 62s;
+}
+
+@-webkit-keyframes bubbles {
+  50% {
+    -webkit-transform: translateY(100vh) translateX(40px);
+            transform: translateY(100vh) translateX(40px);
+    -webkit-box-shadow: inset 0px 0px 16px #010172;
+            box-shadow: inset 0px 0px 16px #010172;
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(0px);
+            transform: translateY(0px) translateX(0px);
+  }
+}
+
+@keyframes bubbles {
+  50% {
+    -webkit-transform: translateY(100vh) translateX(40px);
+            transform: translateY(100vh) translateX(40px);
+    -webkit-box-shadow: inset 0px 0px 16px #010172;
+            box-shadow: inset 0px 0px 16px #010172;
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(0px);
+            transform: translateY(0px) translateX(0px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
